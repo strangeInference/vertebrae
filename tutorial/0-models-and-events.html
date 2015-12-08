@@ -19,7 +19,7 @@
  *
  * For now, we'll focus on one piece at a time, starting with the _Model_.
  * As we go through, refer to the [documentation](http://backbonejs.org/)
- * with questions, and don't be afraid to use the halp desk.
+ * with questions, and don't be afraid to use the help desk.
  */
 
 /* - Backbone MODEL -----------------------------------------------------------
@@ -54,7 +54,7 @@ myTweet.set('message', 'Hello, world!');
 /* Using the reference, get the message attribute of the model and display it:
  * http://backbonejs.org/#Model-get */
 
-// window.alert(YOUR CODE HERE);
+window.alert(myTweet.get('message'));
 
 /* - Backbone EVENTS ----------------------------------------------------------
  * Backbone gives us the ability to listen for events on our models,
@@ -83,7 +83,7 @@ myTweet.on('change',
     console.log(e);
 
     // Write code to log the changed attribute:
-// window.alert(YOUR CODE HERE);
+    window.alert(e.changed.message);
   }
 );
 
@@ -97,6 +97,7 @@ myTweet.on('change',
  * and write a one-liner that will make our `change` listener fire: */
 
 // myTweetYOUR CODE HERE;
+myTweet.set('message', 'Goodbye cruel world!');
 
 /* Once you have the `change` event firing, move on to rendering! */
   </script>
